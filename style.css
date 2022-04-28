@@ -1,0 +1,280 @@
+/* fuentes
+font-family: 'Oswald', sans-serif; 
+#828282
+#c6c6c6
+#5e5e5e
+#6f6f6f
+#aaaaaa
+
+
+
+
+
+/* Header */
+
+
+
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #828282 ;
+    font-family:'Oswald', sans-serif ;
+    
+    
+}
+
+
+
+/* .barraNav{
+
+} */
+
+.barraNav__lista{
+    list-style:none ;
+    text-align: right;
+   
+}
+
+.barraNav__lista li  a {
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+
+.barraNav__lista li{
+    transition: transform 0.5s;
+}
+
+.barraNav__lista li:hover {
+    transform: scale(1.2);
+}
+
+ ul li {
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Oswald', sans-serif;;
+}
+
+
+
+.logo { 
+    display: grid;
+    height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+
+.carrusel {
+    margin:  auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    row-gap: 10px;
+}
+
+/* .imgMenu img {
+    width: 50vh;
+}
+ 
+
+.imgMenu img {
+    padding: 10px;
+    border-radius: 30px;
+} */
+
+.carrusel {
+    width: 100vh;
+    height: 100vh;
+    background-image: url(./imagenes/photo-1580261450046-d0a30080dc9b.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: carrusel;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    padding: 10px;
+    border-radius: 30px;
+}
+@keyframes carrusel {
+    33% {
+        background-image: url(./imagenes/press.jpg);
+    }
+    66% {
+        background-image: url(./imagenes/rack.jpg);
+    }
+    99% {
+        background-image: url(./imagenes/dumbbells.jpg) ;
+}
+
+}
+ .titulo__menu {
+    text-align: center;
+    background-color: #5e5e5e ;
+}
+
+.subtitulo__menu {
+        text-align: center;
+        background-color: #5e5e5e ;
+}
+
+/* footer */
+
+
+
+footer{
+        display: grid;
+        justify-content: center;
+        padding-top: 10px;
+        background-color: #5e5e5e ;
+        
+}
+
+.redesSociales i a{
+    background-color: #5e5e5e ;
+}
+
+
+/* contacto */
+
+.h1__contacto {
+    text-align: center;
+}
+.h2__contacto{
+    text-align: center;
+    
+}
+.redesSociales__contacto i a{
+    background-color: #5e5e5e ;
+
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    grid-template-rows:70px 55px ;
+    font-size: 2rem;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+input {
+   height: 25px;
+}
+
+input:focus {
+height: 35px;
+background-color:#c6c6c6;
+}
+
+/* ¿ quienes somos ? */
+
+.titulo__nosotros{
+    text-align: center;
+}
+
+.subtitulo__nosotros {
+    text-align: center;
+}
+
+
+/* PRODUCTOS */
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+  width: 33%;
+}
+.estilo-a{
+    font-family: sans-serif;
+}
+.estilo-a a {
+text-decoration: none;
+color: black;
+}
+.estilo-a:hover {
+    text-decoration: underline;
+}
+.estilo-a .img-container {
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+}
+.estilo-a .img-container img {
+    width: 100%;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.estilo-a:hover .img-container img {
+    transform: scale(1.1);
+}
+
+
+
+
+/* mediaqueries */
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        height: 100px;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .titulo__menu {
+        font-size: 28px;
+    }
+
+    .subtitulo__menu {
+        font-size: 24px;
+    }
+
+    .barraNav__lista {
+        font-size: 15px;
+        
+    }
+    .barraNav__lista li a {
+     font-size: 20px;
+}
+     .imgMenu {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+
+        }
+    
+     .imgMenu img {
+        width: 20vh;
+        border-radius: 30px;
+        margin: 0 10px 0 10px  ;
+    }
+   
+    footer {
+      position: absolute;
+      width: 100vw;
+      bottom: 0;
+    }
+
+    /* contacto */
+    form {
+        display: grid;
+        justify-content: center;
+        grid-template-rows:50px 35px ;
+        font-size: 2rem;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+}

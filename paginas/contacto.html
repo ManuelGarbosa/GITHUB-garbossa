@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/logo.png" >
+    <link rel="stylesheet" href="../style.css">
+    <title>Contacto</title>
+</head>
+<nav class="barraNav">
+    <ul class="barraNav__lista">
+        <img src="../imagenes/pngegg.png" alt="logo menu principal" class="logo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">menu</a>
+                </li>
+                <li>
+                    <a href="../paginas/productos.html">productos</a>
+               </li>
+               <li>
+                   <a href="../paginas/ofertas.html">ofertas</a>
+               </li>
+               <li>
+                <a href="../paginas/contacto.html">contacto</a>
+              </li>
+               <li>
+                   <a href="../paginas/envios.html">envios</a>
+               </li>
+            </ul>
+        </nav>
+     </header>    
+     <h1 class="h1__contacto">Contactanos</h1>
+    <section class="contacto">
+        <h2 class="h2__contacto">debes ingresar tus datos</h2>
+        <form action="index.js" method="POST" enctype="" class="formContacto">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="name" placeholder="Nombre y Apellido" class="input__Contacto">
+            <br>
+            <label for="Email">Email</label>
+            <input type="email" name="email" placeholder="email" class="input__Contacto" >
+            <br>
+            <label for="Mantener usuario">Guardar usuario</label>
+            <input type="checkbox" name="setLogin" id="" value="Mantener usuario">
+            <input type="submit" value="ingresar">
+           <br>
+            <label for="comment">Consulta</label>
+            <br>
+            <textarea name="comment" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </section>
+    <footer>
+        <div class="redesSociales__contacto">
+            <i><a href="https://www.instagram.com/"><img src="" alt="Instagram"></a></i>
+            <i><a href="https://www.facebook.com/"><img src="" alt="Facebook"></a></i>
+            <i><a href="https://web.whatsapp.com/"><img src="" alt="Whatsapp"></a></i>
+        </div>
+    </footer>
+</body>
+</html>
